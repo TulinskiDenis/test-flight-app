@@ -1,0 +1,20 @@
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        data: debug
+    com.senla.testapp: debug
+spring:
+  application:
+    name: cargo-service
+  data:
+    mongodb:
+      database: test
+      host: mongo-db
+      port: 27017
+#  config:
+#    import: optional:configserver:http://localhost:8888/
+
+server:
+  port: 8002

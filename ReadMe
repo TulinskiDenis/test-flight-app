@@ -1,0 +1,12 @@
+Docker compose command to build images and start container:
+docker-compose -f docker-compose.yaml up --build
+
+Gateway port:
+7999
+
+Gateway api description swagger url:
+http://localhost:7999/swagger-ui/
+
+Request examples:
+http://localhost:7999/api/v1/gateway/pieces/GDN/arr/2017-01-12T1031:49 -03:00
+http://localhost:7999/api/v1/gateway/weight/3919/2020-08-12T06:55:55 -03:00/lb/total

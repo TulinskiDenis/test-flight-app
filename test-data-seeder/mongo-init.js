@@ -1,0 +1,332 @@
+db.createUser(
+        {
+            user: "admin",
+            pwd: "password",
+            roles: [
+                {
+                    role: "readWrite",
+                    db: "test"
+                }
+            ]
+        }
+);
+db.cargo.insertMany([
+  {
+    "_id": 0,
+    "baggage": [
+      {
+        "_id": 0,
+        "weight": 999,
+        "weightUnit": "kg",
+        "pieces": 339
+      },
+      {
+        "_id": 1,
+        "weight": 965,
+        "weightUnit": "kg",
+        "pieces": 744
+      },
+      {
+        "_id": 2,
+        "weight": 604,
+        "weightUnit": "kg",
+        "pieces": 99
+      },
+      {
+        "_id": 3,
+        "weight": 907,
+        "weightUnit": "lb",
+        "pieces": 521
+      },
+      {
+        "_id": 4,
+        "weight": 240,
+        "weightUnit": "lb",
+        "pieces": 479
+      },
+      {
+        "_id": 5,
+        "weight": 475,
+        "weightUnit": "lb",
+        "pieces": 42
+      }
+    ],
+    "cargo": [
+      {
+        "_id": 0,
+        "weight": 526,
+        "weightUnit": "kg",
+        "pieces": 621
+      },
+      {
+        "_id": 1,
+        "weight": 789,
+        "weightUnit": "lb",
+        "pieces": 332
+      },
+      {
+        "_id": 2,
+        "weight": 260,
+        "weightUnit": "lb",
+        "pieces": 441
+      }
+    ]
+  },
+  {
+    "_id": 1,
+    "baggage": [
+      {
+        "_id": 0,
+        "weight": 722,
+        "weightUnit": "lb",
+        "pieces": 8
+      },
+      {
+        "_id": 1,
+        "weight": 683,
+        "weightUnit": "kg",
+        "pieces": 763
+      },
+      {
+        "_id": 2,
+        "weight": 932,
+        "weightUnit": "kg",
+        "pieces": 872
+      },
+      {
+        "_id": 3,
+        "weight": 259,
+        "weightUnit": "kg",
+        "pieces": 497
+      },
+      {
+        "_id": 4,
+        "weight": 609,
+        "weightUnit": "lb",
+        "pieces": 304
+      },
+      {
+        "_id": 5,
+        "weight": 798,
+        "weightUnit": "lb",
+        "pieces": 966
+      },
+      {
+        "_id": 6,
+        "weight": 316,
+        "weightUnit": "kg",
+        "pieces": 748
+      }
+    ],
+    "cargo": [
+      {
+        "_id": 0,
+        "weight": 928,
+        "weightUnit": "kg",
+        "pieces": 258
+      },
+      {
+        "_id": 1,
+        "weight": 789,
+        "weightUnit": "kg",
+        "pieces": 301
+      },
+      {
+        "_id": 2,
+        "weight": 688,
+        "weightUnit": "kg",
+        "pieces": 321
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "baggage": [
+      {
+        "_id": 0,
+        "weight": 733,
+        "weightUnit": "lb",
+        "pieces": 544
+      },
+      {
+        "_id": 1,
+        "weight": 60,
+        "weightUnit": "kg",
+        "pieces": 231
+      },
+      {
+        "_id": 2,
+        "weight": 874,
+        "weightUnit": "lb",
+        "pieces": 617
+      },
+      {
+        "_id": 3,
+        "weight": 83,
+        "weightUnit": "lb",
+        "pieces": 830
+      },
+      {
+        "_id": 4,
+        "weight": 466,
+        "weightUnit": "lb",
+        "pieces": 700
+      }
+    ],
+    "cargo": [
+      {
+        "_id": 0,
+        "weight": 300,
+        "weightUnit": "lb",
+        "pieces": 991
+      },
+      {
+        "_id": 1,
+        "weight": 220,
+        "weightUnit": "lb",
+        "pieces": 598
+      },
+      {
+        "_id": 2,
+        "weight": 503,
+        "weightUnit": "kg",
+        "pieces": 751
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "baggage": [
+      {
+        "_id": 0,
+        "weight": 71,
+        "weightUnit": "kg",
+        "pieces": 461
+      },
+      {
+        "_id": 1,
+        "weight": 254,
+        "weightUnit": "kg",
+        "pieces": 874
+      },
+      {
+        "_id": 2,
+        "weight": 81,
+        "weightUnit": "kg",
+        "pieces": 222
+      }
+    ],
+    "cargo": [
+      {
+        "_id": 0,
+        "weight": 387,
+        "weightUnit": "lb",
+        "pieces": 113
+      },
+      {
+        "_id": 1,
+        "weight": 490,
+        "weightUnit": "lb",
+        "pieces": 984
+      },
+      {
+        "_id": 2,
+        "weight": 616,
+        "weightUnit": "lb",
+        "pieces": 840
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "baggage": [
+      {
+        "_id": 0,
+        "weight": 217,
+        "weightUnit": "kg",
+        "pieces": 385
+      },
+      {
+        "_id": 1,
+        "weight": 118,
+        "weightUnit": "kg",
+        "pieces": 459
+      },
+      {
+        "_id": 2,
+        "weight": 264,
+        "weightUnit": "lb",
+        "pieces": 715
+      }
+    ],
+    "cargo": [
+      {
+        "_id": 0,
+        "weight": 460,
+        "weightUnit": "lb",
+        "pieces": 111
+      },
+      {
+        "_id": 1,
+        "weight": 597,
+        "weightUnit": "kg",
+        "pieces": 467
+      },
+      {
+        "_id": 2,
+        "weight": 666,
+        "weightUnit": "lb",
+        "pieces": 498
+      },
+      {
+        "_id": 3,
+        "weight": 833,
+        "weightUnit": "kg",
+        "pieces": 117
+      },
+      {
+        "_id": 4,
+        "weight": 446,
+        "weightUnit": "kg",
+        "pieces": 877
+      }
+    ]
+  }
+])
+db.flight.insertMany([
+  {
+    "_id": 0,
+    "flightNumber": 8436,
+    "departureAirportIATACode": "LAX",
+    "arrivalAirportIATACode": "MIT",
+    "departureDate": "2015-08-26T04:50:36 -03:00"
+  },
+  {
+    "_id": 1,
+    "flightNumber": 8130,
+    "departureAirportIATACode": "ANC",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2020-08-12T06:55:55 -03:00"
+  },
+  {
+    "_id": 2,
+    "flightNumber": 1678,
+    "departureAirportIATACode": "YYT",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2020-07-02T04:46:48 -03:00"
+  },
+  {
+    "_id": 3,
+    "flightNumber": 3919,
+    "departureAirportIATACode": "YYZ",
+    "arrivalAirportIATACode": "LEW",
+    "departureDate": "2018-12-21T09:18:42 -03:00"
+  },
+  {
+    "_id": 4,
+    "flightNumber": 7306,
+    "departureAirportIATACode": "ANC",
+    "arrivalAirportIATACode": "LEW",
+    "departureDate": "2015-11-25T02:07:21 -03:00"
+  }
+])

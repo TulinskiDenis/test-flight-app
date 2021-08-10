@@ -1,0 +1,48 @@
+version: '3.3'
+services:
+  gateway:
+    container_name: gateway
+    build: gateway
+    ports:
+      - 7999:7999
+    volumes:
+      - ./:/app
+    command: ./mvnw spring-boot:run
+    depends_on:
+        - cargo-service
+        - flight-service 
+  cargo-service:
+    container_name: cargo-service
+    build: cargo-service
+    #ports:
+      #- 8002:8002
+    volumes:
+      - ./:/app
+    command: ./mvnw spring-boot:run
+    depends_on:
+        - mongo-db
+  flight-service:
+    container_name: flight-service
+    build: flight-service
+    #ports:
+      #- 8001:8001
+    volumes:
+      - ./:/app
+    command: ./mvnw spring-boot:run
+    depends_on:
+        - mongo-db
+  mongo-db:
+    image: mongo
+    container_name: mongo-db
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db/:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: test
+  mongo-seed:
+      container_name: mongo-seed  
+      build: ./test-data-seeder
+      links:
+        - mongo-db
+            

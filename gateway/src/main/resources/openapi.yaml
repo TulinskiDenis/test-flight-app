@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Flight Gateway API
+  description: Api requests
+  version: 0.1.9
+paths:
+  weight/{flightNumber}/{date}/{weightUnit}/{itemsType}:
+    get:
+      summary: Weight for requested Flight
+      parameters:
+        - in: path
+          name: flightNumber
+          description: Flight number
+        - in: path
+          name: date
+          description: Date String
+        - in: path
+          name: weightUnit
+          description: Possible values - kg/lb
+        - in: path
+          name: itemsType
+          description: Possible values - baggage/cargo/total  

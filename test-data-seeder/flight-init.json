@@ -1,0 +1,37 @@
+[
+  {
+    "_id": 0,
+    "flightNumber": 8436,
+    "departureAirportIATACode": "LAX",
+    "arrivalAirportIATACode": "MIT",
+    "departureDate": "2015-08-26T04:50:36 -03:00"
+  },
+  {
+    "_id": 1,
+    "flightNumber": 8130,
+    "departureAirportIATACode": "ANC",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2020-08-12T06:55:55 -03:00"
+  },
+  {
+    "_id": 2,
+    "flightNumber": 1678,
+    "departureAirportIATACode": "YYT",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2020-07-02T04:46:48 -03:00"
+  },
+  {
+    "_id": 3,
+    "flightNumber": 3919,
+    "departureAirportIATACode": "YYZ",
+    "arrivalAirportIATACode": "LEW",
+    "departureDate": "2018-12-21T09:18:42 -03:00"
+  },
+  {
+    "_id": 4,
+    "flightNumber": 7306,
+    "departureAirportIATACode": "ANC",
+    "arrivalAirportIATACode": "LEW",
+    "departureDate": "2015-11-25T02:07:21 -03:00"
+  }
+]
